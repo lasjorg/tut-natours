@@ -15,6 +15,35 @@
 </head>
 
 <body>
+
+    <div class="navigation">
+        <input id="navi-toggle" type="checkbox" class="navigation__checkbox">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon"></span>
+        </label>
+        <div class="navigation__background"></div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link"><span>01</span>About Natours</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link"><span>02</span>Your benefits</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link"><span>03</span>Popular tours</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link"><span>04</span>Stories</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link"><span>05</span>Book now</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
     <header class="header">
         <div class="header__logo-box">
             <img class="header__logo" src="img/logo-white.png" alt="Logo">
@@ -333,15 +362,11 @@
             </div>
         </div>
     </footer>
-
-    <!-- <div class="row">
-        <div class="col-1-of-3">
-            1 of 2
-        </div>
-        <div class="col-2-of-3">
-            2 of 3
-        </div>
-    </div> -->
+    <!-- The script tag containing a single space is a fix for chrome on page load transition bug 
+    https://bugs.chromium.org/p/chromium/issues/detail?id=332189
+    https://stackoverflow.com/questions/14389566/stop-css3-transition-from-firing-on-page-load
+    -->
+    <script> </script>
 </body>
 
 </html>
