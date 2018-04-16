@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
@@ -26,19 +26,24 @@
         <nav class="navigation__nav">
             <ul class="navigation__list">
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link"><span>01</span>About Natours</a>
+                    <a href="#" class="navigation__link">
+                        <span>01</span>About Natours</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link"><span>02</span>Your benefits</a>
+                    <a href="#" class="navigation__link">
+                        <span>02</span>Your benefits</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link"><span>03</span>Popular tours</a>
+                    <a href="#" class="navigation__link">
+                        <span>03</span>Popular tours</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link"><span>04</span>Stories</a>
+                    <a href="#" class="navigation__link">
+                        <span>04</span>Stories</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link"><span>05</span>Book now</a>
+                    <a href="#" class="navigation__link">
+                        <span>05</span>Book now</a>
                 </li>
             </ul>
         </nav>
@@ -163,7 +168,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">&dollar;297</p>
                                 </div>
-                                <a href="#/" class="btn btn--white">Book new!</a>
+                                <a href="#popup" class="btn btn--white">Book new!</a>
                             </div>
                         </div>
                     </div>
@@ -193,7 +198,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">&dollar;497</p>
                                 </div>
-                                <a href="#/" class="btn btn--white">Book new!</a>
+                                <a href="#popup" class="btn btn--white">Book new!</a>
                             </div>
                         </div>
                     </div>
@@ -223,7 +228,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">&dollar;897</p>
                                 </div>
-                                <a href="#/" class="btn btn--white">Book new!</a>
+                                <a href="#popup" class="btn btn--white">Book new!</a>
                             </div>
                         </div>
                     </div>
@@ -362,11 +367,34 @@
             </div>
         </div>
     </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+                <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+                <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis soluta accusantium velit quas architecto
+                    consectetur at. Qui dicta id totam sapiente. Ullam quibusdam nostrum quos deserunt, dolorem magni tenetur
+                    quaerat! Sit amet consectetur adipisicing elit. Explicabo voluptate nobis at assumenda
+                    doloremque asperiores, vitae natus. Odit ut iusto, enim impedit, amet ipsum neque est velit voluptas
+                    cupiditate repellat.
+                </p>
+
+                <a href="" class="btn btn--green">Discover all tours</a>
+            </div>
+        </div>
+    </div>
     <!-- The script tag containing a single space is a fix for chrome on page load transition bug 
     https://bugs.chromium.org/p/chromium/issues/detail?id=332189
     https://stackoverflow.com/questions/14389566/stop-css3-transition-from-firing-on-page-load
     -->
-    <script> </script>
+    <script>
+    </script>
 </body>
 
 </html>
