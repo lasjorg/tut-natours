@@ -15,11 +15,13 @@
 
 /* Media queries manager
 
-     0px ->  600px =  37.5em    Phone
-   600px ->  900px = 56.25em    Tablet portrait
-   900px -> 1200px =    75em    Tablet landscape
-  1200px -> 1800px =            Normal styles
-  1800px ->    *px = 112.5em    Big desktop
+     0px ->  600px =   37.5em  (600/16)        Phone
+   600px ->  900px =  56.25em  (900/16)        Tablet portrait
+   900px -> 1200px =     75em  (1200/16)       Tablet landscape
+  1200px -> 1800px = 75-112em  (1200-1800/16)  Normal styles
+  1800px ->    *px = >112.5em  (1800/16)       Big desktop
+  
+  (16 is the default font size)
 
   $breakpoint arguments list:
 
