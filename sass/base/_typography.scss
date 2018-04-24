@@ -4,7 +4,6 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: $color-gray-dark-1;
-  padding: 3rem;
 }
 
 .heading-primary {
@@ -19,6 +18,11 @@ body {
     letter-spacing: 3.5rem;
     /* animation: 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) slideInLeft; */
     animation: 1.5s ease-out slideInLeft;
+
+    @include respond(phone) {
+      font-size: 5rem;
+      letter-spacing: 1rem;
+    }
   }
 
   &--sub {
@@ -28,6 +32,10 @@ body {
     letter-spacing: 1.75rem;
     /* animation: 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) slideInRight; */
     animation: 1.5s ease-out slideInRight;
+
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
   }
 }
 
@@ -36,25 +44,35 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: .2rem;
-  transition: all .3s ease-out;
+  letter-spacing: 0.2rem;
+  transition: all 0.3s ease-out;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
 
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
   }
 }
-
 .heading-tertiary {
   font-size: $default-font-size;
   font-weight: 700;
   text-transform: uppercase;
 }
-
 .paragraph {
   font-size: $default-font-size;
 
